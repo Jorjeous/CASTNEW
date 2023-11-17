@@ -45,10 +45,73 @@ After completing these steps, you should be able to access Label Studio through 
 Usually at http://127.0.0.1:8080. (But terminal could provide another port)
 
 
-# Navigation through LS application
-<div align="center">
-    <img src="https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/createproj.png?ref_type=heads" style="width: 66%;">
-</div>
+
+
+
+# Navigation through Label Studio Application
+
+This guide will walk you through using Label Studio for audio labeling.
+
+## Getting Started
+
+1. **Login or Sign Up:**
+   - Open Label Studio by going to `127.0.0.1:<yourport>`. You'll be greeted with a login/sign-in window.
+   - If it's your first time, click on 'Sign in' and create an account using any valid email address (it must pass a sanity check, e.g., name@provider.com).
+   - The password should be between 8 to 12 symbols.
+   - Remember to uncheck the box for "latest news".
+
+   ![Login or Sign Up](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/logsign.png?ref_type=heads)
+
+2. **Creating a New Project:**
+   - Once logged in, you'll see the project page. If this is your first visit, you probably won't have any projects yet.
+   - Click on the 'Create Project' button to start a new project.
+
+   ![Create New Project](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/createproj.png?ref_type=heads)
+
+3. **Data Import:**
+   - Navigate to the 'Data Import' button (top middle of the screen).
+   - You'll be asked to upload files. For convenience, provide a NeMo JSON manifest containing strings in the NeMo format where `audio_filepath` and `text` are mandatory.
+
+     Example:
+     ```
+     {"audio_filepath": "/home/user/CAST/audiofile1.wav", "duration": 2.85, "text": "sample text"}
+     {"audio_filepath": "/home/user/CAST/audiofile2.wav", "duration": 3.10, "text": "another sample text"}
+     ```
+   - Audios and manifest will be loaded into the app.
+
+   ![Data Import](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/importOK.png?ref_type=heads)
+
+4. **Labeling Setup:**
+   - Click on 'Labeling Setup' (top-right) and then navigate to 'Audio/Speech Processing'.
+
+   ![Labeling Setup](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/labeling%20setup.png?ref_type=heads)
+
+   - Select the 'Automatic Speech Recognition "[NeMo]"' template, highlighted in green, and then click 'Save'. You'll be automatically navigated to the current project.
+
+   ![NeMo Template](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/nemo_template.png?ref_type=heads)
+
+5. **Working on Tasks:**
+   - On the project page, you can choose which task to annotate today or click on 'Label All Tasks'.
+   - There is also the possibility to filter and sort tasks.
+
+   ![Tasks and Filters](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/tasksandfilters.png?ref_type=heads)
+
+6. **Labeling Interface:**
+   - The Ground Truth (GT) inserts the text field from the NeMo manifest corresponding to the audio.
+   - The audio player is interactive, allowing you to play from a specific point, repeat parts of the audio, and adjust the speed.
+   - To submit your transcription, click 'Submit'. If you wish to skip the current utterance, click 'Skip'.
+
+   ![Submit and Skip](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/submitandskip.png?ref_type=heads)
+
+7. **Exporting Results:**
+   - Once you're done with the tasks, you can export the results of your work.
+   - Click 'Export', choose the format (likely 'ASR Manifest'), and then click 'Export'.
+
+   ![Exporting Results](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/exporting.png?ref_type=heads)
+
+Congratulations on completing your tasks in Label Studio!
+
+
 
 
 ![GitHub](https://img.shields.io/github/license/heartexlabs/label-studio?logo=heartex) ![label-studio:build](https://github.com/heartexlabs/label-studio/workflows/label-studio:build/badge.svg) ![GitHub release](https://img.shields.io/github/v/release/heartexlabs/label-studio?include_prereleases)
