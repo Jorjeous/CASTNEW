@@ -60,7 +60,7 @@ This guide will walk you through using Label Studio for audio labeling.
    - The password should be between 8 to 12 symbols.
    - Remember to uncheck the box for "latest news".
 
-   ![Login or Sign Up](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/logsign.png?ref_type=heads)
+   ![Login or Sign Up](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/logsign.png?ref_type=heads)
 
 2. **Creating a New Project:**
    - Once logged in, you'll see the project page. If this is your first visit, you probably won't have any projects yet.
@@ -79,22 +79,22 @@ This guide will walk you through using Label Studio for audio labeling.
      ```
    - Audios and manifest will be loaded into the app.
 
-   ![Data Import](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/importOK.png?ref_type=heads)
+   ![Data Import](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/importOK.png?ref_type=heads)
 
 4. **Labeling Setup:**
    - Click on 'Labeling Setup' (top-right) and then navigate to 'Audio/Speech Processing'.
 
-   ![Labeling Setup](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/labeling%20setup.png?ref_type=heads)
+   ![Labeling Setup](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/labeling%20setup.png?ref_type=heads)
 
    - Select the 'Automatic Speech Recognition "[NeMo]"' template, highlighted in green, and then click 'Save'. You'll be automatically navigated to the current project.
 
-   ![NeMo Template](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/nemo_template.png?ref_type=heads)
+   ![NeMo Template](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/nemo_template.png?ref_type=heads)
 
 5. **Working on Tasks:**
    - On the project page, you can choose which task to annotate today or click on 'Label All Tasks'.
    - There is also the possibility to filter and sort tasks.
 
-   ![Tasks and Filters](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/tasksandfilters.png?ref_type=heads)
+   ![Tasks and Filters](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/tasksandfilters.png?ref_type=heads)
 
 6. **Labeling Interface:**
    - The Ground Truth (GT) inserts the text field from the NeMo manifest corresponding to the audio.
