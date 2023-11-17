@@ -102,15 +102,15 @@ This guide will walk you through using Label Studio for audio labeling.
    - The audio player is interactive, allowing you to play from a specific point, repeat parts of the audio, and adjust the speed.
    - To submit your transcription, click 'Submit'. If you wish to skip the current utterance, click 'Skip'.
 
-   ![Submit and Skip](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/submitandskip.png?ref_type=heads)
+   ![Submit and Skip](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/submitandskip.png?ref_type=heads)
 
 7. **Exporting Results:**
    - Once you're done with the tasks, you can export the results of your work.
    - Click 'Export', choose the format (likely 'ASR Manifest'), and then click 'Export'.
 
-   ![Exporting Results](https://gitlab-master.nvidia.com/gnemo/cast/-/blob/master/images/screenshots/exporting.png?ref_type=heads)
+   ![Exporting Results](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/exporting.png?ref_type=heads)
 
-Congratulations on completing your tasks in Label Studio!
+Congratulations on completing your tasks in CAST project (LS based)!
 
 
 
