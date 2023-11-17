@@ -71,7 +71,7 @@ This guide will walk you through using Label Studio for audio labeling.
    - Navigate to the 'Data Import' button (top middle of the screen).
    - You'll be asked to upload files. For convenience, provide a NeMo JSON manifest containing strings in the NeMo format where `audio_filepath` and `text` are mandatory.
 
-   It is improbable, but in case your manifest consists on one line just copy it to make at least two, like in example below. 
+   It is improbable, but in case your manifest consists of only one line - copy it to make at least two, like in example below. 
 
      Example:
      ```
