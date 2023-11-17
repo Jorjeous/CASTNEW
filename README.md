@@ -46,7 +46,7 @@ Usually at http://127.0.0.1:8080. (But terminal could provide another port)
 
 
 # Navigation through LS application
-<img src="https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/createproj.png?ref_type=heads" width="18px">
+<img src="https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/createproj.png?ref_type=heads" width="180px">
 
 
 
