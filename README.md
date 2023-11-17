@@ -11,7 +11,6 @@ This guide provides a step-by-step process to set up Label Studio (LS).
    - Clone the repository using the provided link:
      ```bash
      git clone "https://gitlab-master.nvidia.com/gnemo/cast.git"      
-     git clone 'ssh://git@gitlab-master.nvidia.com:12051/gnemo/cast.git'
      cd cast
      ```
 
@@ -71,6 +70,8 @@ This guide will walk you through using Label Studio for audio labeling.
 3. **Data Import:**
    - Navigate to the 'Data Import' button (top middle of the screen).
    - You'll be asked to upload files. For convenience, provide a NeMo JSON manifest containing strings in the NeMo format where `audio_filepath` and `text` are mandatory.
+
+   It is improbable, but in case your manifest consists on one line just copy it to make at least two, like in example below. 
 
      Example:
      ```
