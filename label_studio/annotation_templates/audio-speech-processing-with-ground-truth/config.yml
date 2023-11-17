@@ -1,0 +1,16 @@
+title: Automatic Speech Recognition [NeMo]
+type: community
+group: Audio/Speech Processing
+image: /static/templates/nasr.png
+details: <h1>Provide transcript for the audio and check ground truth</h1>
+config: |
+  <View>
+  <Audio name="audio" value="$audio" zoom="true" hotkey="ctrl+enter" />
+  <Header value="Ground Truth Transcript" />
+  <TextArea name="ground truth" toName="audio" value="$text" rows="4" editable="true" />
+  <!--Button4-->
+  <Header value="Your Transcription" />
+  <TextArea name="your transcription" toName="audio" rows="4" editable="true" maxSubmissions="1" />
+  
+  </View>
+
