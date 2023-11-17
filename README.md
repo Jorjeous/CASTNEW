@@ -1,18 +1,52 @@
 <img src="https://user-images.githubusercontent.com/12534576/192582340-4c9e4401-1fe6-4dbb-95bb-fdbba5493f61.png"/>
 
-Here is tutorial for using Label Studio (LS) for audio labeling in NeMo mode, above this QuickStart guide placed original README for LS.
-# Setup and installation
-1. Clone this repository, go into label_studio directoty, then find setup.py and run:
-   pip install -e .
-   # python setup.py install  
-3. Next do callstatic:
-    python label_studio/manage.py collectstatic
-4. And build:
-   # python setup.py build
-5. Run server and acess it via browser. (usualy addres is http://127.0.0.1:8080)
-   # python label_studio/manage.py runserver
-# Navigation through LS application
 
+# Label Studio Setup for CAST 
+
+This guide provides a step-by-step process to set up Label Studio (LS).
+
+## Steps for Setting Up
+
+1. **Clone the Repository:**
+   - Clone the repository using the provided link:
+     ```bash
+     git clone "https://gitlab-master.nvidia.com/gnemo/cast.git"      
+     git clone 'ssh://git@gitlab-master.nvidia.com:12051/gnemo/cast.git'
+     cd cast
+     ```
+
+2. **Optional: Create a Virtual Environment:**
+   - It's recommended to create a virtual environment for Python:
+     ```bash
+     python3 -m venv .cast
+     source .cast/bin/activate
+     ```
+
+3. **Install Dependencies:**
+   - Install the necessary dependencies for Label Studio:
+     ```bash
+     pip install . -e
+     ```
+
+4. **Prepare Application:**
+   - Collect static files and migrate the database:
+     ```bash
+     python label_studio/manage.py collectstatic
+     python label_studio/manage.py migrate
+     ```
+
+5. **Run the Application:**
+   - Start the Label Studio application:
+     ```bash
+     python label_studio/manage.py runserver
+     ```
+
+After completing these steps, you should be able to access Label Studio through your web browser. 
+Usually at http://127.0.0.1:8080. (But terminal could provide another port)
+
+
+# Navigation through LS application
+<img src="https://gitlab-master.nvidia.com/gnemo/cast/-/tree/master/images/createproj.png">
 
 
 
