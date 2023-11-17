@@ -46,9 +46,9 @@ Usually at http://127.0.0.1:8080. (But terminal could provide another port)
 
 
 # Navigation through LS application
-<p align="center">
-    <img src="https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/createproj.png?ref_type=heads" width="66%">
-</p>
+<div align="center">
+    <img src="https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/createproj.png?ref_type=heads" style="width: 66%;">
+</div>
 
 
 ![GitHub](https://img.shields.io/github/license/heartexlabs/label-studio?logo=heartex) ![label-studio:build](https://github.com/heartexlabs/label-studio/workflows/label-studio:build/badge.svg) ![GitHub release](https://img.shields.io/github/v/release/heartexlabs/label-studio?include_prereleases)
