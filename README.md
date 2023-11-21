@@ -14,6 +14,11 @@ This guide provides a step-by-step process to set up Label Studio (LS).
      cd cast
      ```
 
+     ```bash
+     git clone ssh://git@gitlab-master.nvidia.com:12051/gnemo/cast.git
+     cd cast
+     ```
+
 2. **Optional: Create a Virtual Environment:**
    - It's recommended to create a virtual environment for Python:
      ```bash
@@ -24,7 +29,7 @@ This guide provides a step-by-step process to set up Label Studio (LS).
 3. **Install Dependencies:**
    - Install the necessary dependencies for Label Studio:
      ```bash
-     pip install . -e
+     pip install -e .
      ```
 
 4. **Prepare Application:**
