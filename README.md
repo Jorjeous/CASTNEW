@@ -115,7 +115,8 @@ This guide will walk you through using Label Studio for audio labeling.
 
    ![Exporting Results](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/exporting.png?ref_type=heads)
 
-Congratulations on completing your tasks in CAST project (LS based)!
+___
+####Congratulations on completing your tasks in CAST project (LS based)!
 ___
 ___
 ___
