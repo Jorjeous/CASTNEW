@@ -8,7 +8,7 @@ This guide provides a step-by-step process to set up Label Studio (LS).
 ## Steps for Setting Up
 
 1. **Clone the Repository:**
-   - Clone the repository using the provided link:
+   - Clone the repository using the provided link, http or ssh - at your discretion:
      ```bash
      git clone "https://gitlab-master.nvidia.com/gnemo/cast.git"      
      cd cast
