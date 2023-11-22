@@ -88,13 +88,19 @@ This guide will walk you through using Label Studio for audio labeling.
    ![Data Import](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/importOK.png?ref_type=heads)
 
 4. **Labeling Setup:**
-   - Click on 'Labeling Setup' (top-right) and then navigate to 'Audio/Speech Processing'.
+   - Click on 'Labeling Setup' (top-right) and then navigate to 'Audio/Speech Processing' (yellow).
 
    ![Labeling Setup](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/labeling%20setup.png?ref_type=heads)
 
-   - Select the 'Automatic Speech Recognition "[NeMo]"' template, highlighted in green, and then click 'Save'. You'll be automatically navigated to the current project.
+   - Select the 'ASR + Ground Truth + Model Prediction "[NeMo]"' or 'ASR + Ground Truth "[NeMo]"' template, highlighted in blue, and then click 'Save'. You'll be automatically navigated to the current project.
 
-   ![NeMo Template](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/nemo_template.png?ref_type=heads)
+   ![NeMo Template](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/Browse%20templates.png?ref_type=heads)
+
+   - You can also specify which fields from the manifest will match the fields in the template. Click on "code" (top-middle).
+
+   - The corresponding colors (green, yellow) are related fields. In this example, **$text** corresponds to the ground truth. In the manifest, this field is also called text. The same works for "**$pred_text**". You can change value to your own one. **Do not change "names="**
+
+   ![Template Ground](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/Template_Model_Ground.png?ref_type=heads)
 
 5. **Working on Tasks:**
    - On the project page, you can choose which task to annotate today or click on 'Label All Tasks'.
@@ -102,12 +108,13 @@ This guide will walk you through using Label Studio for audio labeling.
 
    ![Tasks and Filters](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/tasksandfilters.png?ref_type=heads)
 
+
 6. **Labeling Interface:**
-   - The Ground Truth (GT) inserts the text field from the NeMo manifest corresponding to the audio.
+   - The "Copy Above" inserts the text from field above into Your transctiption field.
    - The audio player is interactive, allowing you to play from a specific point, repeat parts of the audio, and adjust the speed.
    - To submit your transcription, click 'Submit'. If you wish to skip the current utterance, click 'Skip'.
 
-   ![Submit and Skip](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/submitandskip.png?ref_type=heads)
+   ![Submit and Skip](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/Labeling%20interface%202.png?ref_type=heads)
 
 7. **Exporting Results:**
    - Once you're done with the tasks, you can export the results of your work.
