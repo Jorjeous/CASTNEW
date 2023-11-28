@@ -10,7 +10,7 @@ config: |
     <Header value="Ground Truth"/>
     <Text name="ground" value="$text" highlightColor='#FF1493' saveTextResult="yes"/> 
 
-    <Header value="Asr Transcript" />
+    <Header value="ASR Transcript" />
     <TextArea name="copyarea" toName="audio" value="$pred_text" rows="4" editable="true" saveTextResult="yes"/>
 
     <!--Button4_build_lib-->
