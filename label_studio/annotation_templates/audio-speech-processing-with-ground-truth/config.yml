@@ -4,17 +4,18 @@ group: Audio/Speech Processing
 image: /static/templates/nasr.png
 details: <h1>Provide transcript for the audio and check asr transcript</h1>
 config: |
-<View>
-  <Audio name="audio" value="$audio" zoom="true" hotkey="ctrl+enter" />
+  <View>
+    <Audio name="audio" value="$audio" zoom="true" hotkey="ctrl+enter" />
 
-  <Header value="Ground Truth"/>
-  <Text name="ground" value="$text" highlightColor='#FF1493' saveTextResult="yes"/> 
+    <Header value="Ground Truth"/>
+    <Text name="ground" value="$text" highlightColor='#FF1493' saveTextResult="yes"/> 
   
-  <Header value="Asr Transcript" />
-  <TextArea name="asr transcript" toName="audio" value="$pred_text" rows="4" editable="true" saveTextResult="yes"/>
+    <Header value="Asr Transcript" />
+    <TextArea name="asr transcript" toName="audio" value="$pred_text" rows="4" editable="true" saveTextResult="yes"/>
   
-  <!--Button4-->
-  <Header value="Your Transcription" />
-  <TextArea name="your transcription" toName="audio" rows="4" editable="true" maxSubmissions="1"/>
-</View>
+    <!--Button4-->
+    <!--aspwGT-->
+    <Header value="Your Transcription" />
+    <TextArea name="your transcription" toName="audio" rows="4" editable="true" maxSubmissions="1"/>
+  </View>
 
