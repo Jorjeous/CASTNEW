@@ -1,0 +1,12 @@
+<View>
+    <Audio name="audio" value="$audio" hotkey="space" sync="text"/>
+    <Header value="Transcript"/>
+    <Paragraphs audioUrl="$audio" sync="audio" name="text" value="$alignment" layout="dialogue" textKey="text" nameKey="author" granularity="paragraph" contextscroll="true"/>
+    <Header value="Ground Truth"/>
+    <TextArea name="ground" toName="audio" value="$pred_text" highlightColor='#FF1493' editable="true" saveTextResult="no"/> 
+
+    <Header value="Asr Transcript" />
+    <TextArea name="asr transcript following" toName="audio" value="$pred_text" rows="10" editable="true" saveTextResult="yes"/>
+  
+  <View name="activateScript" />
+ </View>
