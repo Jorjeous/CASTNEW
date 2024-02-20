@@ -1,8 +1,8 @@
-title: Automatic Speech Recognition + Model Prediction + Ground Truth [NeMo]
+title: Automatic Speech Recognition + Long Audio [NeMo]
 type: community
 group: Audio/Speech Processing
 image: /static/templates/nasr.png
-details: <h1>Provide transcript for the audio and check asr transcript</h1>
+details: <h1>Template for long audio transcription.</h1>
 config: |
   <View>
       <Audio name="audio" value="$audio" hotkey="space" sync="text"/>
@@ -13,6 +13,4 @@ config: |
 
       <Header value="Asr Transcript" />
       <TextArea name="asr transcript following" toName="audio" value="$pred_text" rows="10" editable="true" saveTextResult="yes"/>
-    
-    <View name="activateScript" />
   </View>
