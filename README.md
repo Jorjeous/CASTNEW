@@ -108,6 +108,8 @@ This guide will walk you through using Label Studio for audio labeling.
 
    ![Tasks and Filters](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/tasksandfilters.png?ref_type=heads)
 
+   - If desired, you can integrate machine learning (ML) to perform inference during task annotation. For more details, please refer to: ![ML backend](https://gitlab-master.nvidia.com/gnemo/cast_backend)
+   
 
 6. **Labeling Interface:**
    - The "Copy Above" inserts the text from field above into Your transctiption field.
