@@ -118,6 +118,11 @@ This guide will walk you through using Label Studio for audio labeling.
 
    ![Submit and Skip](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/Labeling%20interface%202.png?ref_type=heads)
 
+7. Long Audio Template (preferably working with ML backend):
+   - There will be Transcript field that will show all utterances, for comfortable navigation you can use the play button on the left side of utterance.
+   - Ground Truth will contain text from the "text" field in manifest
+   - Asr Transcript will contain predicted by model text. For you convenience while playing current utterance will be highlighted in Asr Transcript. Also text will be scrolled up to current position. To stop the scrolling you should pause the audio. 
+
 7. **Exporting Results:**
    - Once you're done with the tasks, you can export the results of your work.
    - Click 'Export', choose the format (likely 'ASR Manifest'), and then click 'Export'.
