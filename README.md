@@ -10,12 +10,12 @@ This guide provides a step-by-step process to set up Label Studio (LS).
 1. **Clone the Repository:**
    - Clone the repository using the provided link, http or ssh - at your discretion:
      ```bash
-     git clone "https://gitlab-master.nvidia.com/gnemo/cast.git"      
+     git clone "https://github.com/Jorjeous/CAST.git"      
      cd cast
      ```
 
      ```bash
-     git clone ssh://git@gitlab-master.nvidia.com:12051/gnemo/cast.git
+     git clone ssh://git@github.com:Jorjeous/CAST.git
      cd cast
      ```
 
@@ -64,13 +64,13 @@ This guide will walk you through using Label Studio for audio labeling.
    - The password should be between 8 to 12 symbols.
    - Remember to uncheck the box for "latest news".
 
-   ![Login or Sign Up](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/logsign.png?ref_type=heads)
+   ![Login or Sign Up](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/logsign.png?ref_type=heads)
 
 2. **Creating a New Project:**
    - Once logged in, you'll see the project page. If this is your first visit, you probably won't have any projects yet.
    - Click on the 'Create Project' button to start a new project.
 
-   ![Create New Project](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/createproj.png?ref_type=heads)
+   ![Create New Project](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/createproj.png?ref_type=heads)
 
 3. **Data Import:**
    - Navigate to the 'Data Import' button (top middle of the screen).
@@ -85,30 +85,30 @@ This guide will walk you through using Label Studio for audio labeling.
      ```
    - Audios and manifest will be loaded into the app.
 
-   ![Data Import](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/importOK.png?ref_type=heads)
+   ![Data Import](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/importOK.png?ref_type=heads)
 
 4. **Labeling Setup:**
    - Click on 'Labeling Setup' (top-right) and then navigate to 'Audio/Speech Processing' (yellow).
 
-   ![Labeling Setup](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/labeling%20setup.png?ref_type=heads)
+   ![Labeling Setup](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/labeling%20setup.png?ref_type=heads)
 
    - Select the 'ASR + Ground Truth + Model Prediction "[NeMo]"' or 'ASR + Ground Truth "[NeMo]"' template, highlighted in blue, and then click 'Save'. You'll be automatically navigated to the current project.
 
-   ![NeMo Template](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/Browse%20templates.png?ref_type=heads)
+   ![NeMo Template](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/Browse%20templates.png?ref_type=heads)
 
    - You can also specify which fields from the manifest will match the fields in the template. Click on "code" (top-middle).
 
    - The corresponding colors (green, yellow) are related fields. In this example, **$text** corresponds to the ground truth. In the manifest, this field is also called text. The same works for "**$pred_text**". You can change value to your own one. **Do not change "names="**
 
-   ![Template Ground](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/Template_Model_Ground.png?ref_type=heads)
+   ![Template Ground](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/Template_Model_Ground.png?ref_type=heads)
 
 5. **Working on Tasks:**
    - On the project page, you can choose which task to annotate today or click on 'Label All Tasks'.
    - There is also the possibility to filter and sort tasks.
 
-   ![Tasks and Filters](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/tasksandfilters.png?ref_type=heads)
+   ![Tasks and Filters](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/tasksandfilters.png?ref_type=heads)
 
-   - If desired, you can integrate machine learning (ML) to perform inference during task annotation. For more details, please refer to: [ML backend](https://gitlab-master.nvidia.com/gnemo/cast_backend)
+   - If desired, you can integrate machine learning (ML) to perform inference during task annotation. For more details, please refer to: [ML backend](https://github.com/Jorjeous/CAST) (Not avaible for now)
    
 
 6. **Labeling Interface:**
@@ -116,7 +116,7 @@ This guide will walk you through using Label Studio for audio labeling.
    - The audio player is interactive, allowing you to play from a specific point, repeat parts of the audio, and adjust the speed.
    - To submit your transcription, click 'Submit'. If you wish to skip the current utterance, click 'Skip'.
 
-   ![Submit and Skip](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/Labeling%20interface%202.png?ref_type=heads)
+   ![Submit and Skip](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/Labeling%20interface%202.png?ref_type=heads)
 
 7. Long Audio Template (preferably working with ML backend):
    - There will be Transcript field that will show all utterances, for comfortable navigation you can use the play button on the left side of utterance.
@@ -127,7 +127,7 @@ This guide will walk you through using Label Studio for audio labeling.
    - Once you're done with the tasks, you can export the results of your work.
    - Click 'Export', choose the format (likely 'ASR Manifest'), and then click 'Export'.
 
-   ![Exporting Results](https://gitlab-master.nvidia.com/gnemo/cast/-/raw/master/images/screenshots/exporting.png?ref_type=heads)
+   ![Exporting Results](https://github.com/Jorjeous/CAST/blob/master/images/screenshots/exporting.png?ref_type=heads)
 
 
 
