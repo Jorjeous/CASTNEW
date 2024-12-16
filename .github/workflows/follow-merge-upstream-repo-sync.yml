@@ -24,7 +24,7 @@ jobs:
       github.event.client_payload.event_action == 'merged'
     runs-on: ubuntu-latest
     steps:
-      - uses: hmarr/debug-action@v2.1.0
+      - uses: hmarr/debug-action@v3.0.0
 
       - name: Details
         id: details
@@ -480,7 +480,7 @@ jobs:
       github.event.client_payload.event_action == 'closed'
     runs-on: ubuntu-latest
     steps:
-      - uses: hmarr/debug-action@v2.1.0
+      - uses: hmarr/debug-action@v3.0.0
 
       - name: Get PR
         uses: actions/github-script@v6
